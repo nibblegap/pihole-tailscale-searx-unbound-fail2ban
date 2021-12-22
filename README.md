@@ -1,10 +1,10 @@
 # Secure Pi-Hole + Unbound + Tailscale + Searx + Fail2Ban on an Ubuntu Server
 Installation script for a secured Pi-Hole + Unbound + Tailscale + Searx + Fail2Ban on an Ubuntu Server
 
-### Installation instructions are in the installation_instructions.txt file.
-### Installation script: install.sh file.
+#### Installation instructions are in the installation_instructions.txt file.
+#### Installation script: install.sh file.
 
-This script installs:
+#### This script installs:
 1. Docker
 2. Docker-Compose
 3. Pi-Hole
@@ -14,7 +14,7 @@ This script installs:
 7. UFW
 8. Fail2Ban
 
-It also:
+#### It also:
 1. Disables Password Authentication and Root login
 2. Changes the Pi-Hole web portal port from 80 to 85 allowing the user to install Nginx/Web-server if needed
 3. Tries to make docker use UFW rules (does not always work)
