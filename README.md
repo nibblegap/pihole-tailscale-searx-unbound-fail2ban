@@ -25,3 +25,10 @@ Installation script for a secured Pi-Hole + Unbound + Tailscale + Searx + Fail2B
 8. Enables ping request dropping
 9. Sets up Fail2Ban SSH jail (maxretry=3 and bantime=604800 (1 week))
 
+# Web portal locations:
+
+Pi-Hole Web portal: "http://(tailscale_ip):85/admin/"
+
+Searx search engine: "http://(tailscale_ip):8080"
+
+SSH access: "ssh -p 476 username@(tailscale_ip)"
