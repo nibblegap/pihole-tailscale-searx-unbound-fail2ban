@@ -41,6 +41,7 @@ Connect your device to the tailscale network. Instructions can be found at https
 Log in to the Pi-Hole admin portal (Address should have been outputted at the end of the bash script: http://$(tailscale_ip):85/admin) -> Settings -> DNS -> De-select cloudflare and select custom ip = 127.0.0.1#5335
 
 5. NOTE:
+Searx search engine: https://(tailscale_ip):8080/
 The server's SSH port has been changed. New SSH port = 476. SSH Access command = ssh -p 476 username@tailscale_IP
 (UFW Rule prevents users from accessing SSH outside the tailscale network for security reasons) (This can be changed with "sudo ufw allow 476/tcp")
 (Port 476 was chosen at random. You may choose any port and change it to your liking in the installation script. Be sure to change all instances of "476" in the script.)
