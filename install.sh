@@ -128,10 +128,9 @@ sudo ln -sf /run/systemd/resolve/resolv.conf /etc/resolv.conf
 # SearxNG Setup
 mkdir searx
 cd searx
-export PORT=8080
 sudo docker pull searxng/searxng
-sudo docker run --rm \
-             -d -p ${PORT}:8080 \
+sudo docker run \
+             -d -p 8080:8080 --restart=always \
              -v "${PWD}/searxng:/etc/searxng" \
              -e "BASE_URL=http://localhost:$PORT/" \
              -e "INSTANCE_NAME=Searx" \
