@@ -63,7 +63,7 @@ $ ssh username@IP
 ### 3. Installation process:
 ```
 $ cd $HOME
-$ nano install.sh                         #(Copy the instructions from the install.sh file) (CTRL+O and ENTER and CTRL+X to save and exit)
+$ wget https://raw.githubusercontent.com/orange-tin/pihole-tailscale-searx-unbound-fail2ban/main/install.sh
 $ chmod +x install.sh
 $ ./install.sh
 ```
