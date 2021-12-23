@@ -107,4 +107,4 @@ SSH access: ```ssh -p 476 username@(tailscale_ip)```
 
 This script is just a template that works for me. You may change anything in it to better suit your needs. 
 
-I use it by setting this server as an endpoint on my devices. This allows me to expose just one port (for tailscale) and access Pi-Hole and Searx without worrying about outside access. You could do this, but not everyone would want to. In that case, you will have to configure UFW to allow access to Pi-Hole (Port 85) and Searx(Port 8080) from anywhere with the command ```sudo ufw allow PORT```
+I use it by setting this server as an endpoint on my devices. This allows me to expose just one port (for tailscale) and access Pi-Hole and Searx without worrying about outside access. You could do this, but not everyone would want to. In that case, you will have to configure UFW to allow access to Pi-Hole (Port 85) and Searx (Port 8080) from anywhere with the command ```sudo ufw allow PORT``` and ```sudo ufw reload```.
