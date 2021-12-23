@@ -23,6 +23,18 @@ sudo curl -L "https://github.com/docker/compose/releases/download/1.27.4/docker-
 sudo chmod +x /usr/local/bin/docker-compose
 docker-compose --version
 
+# Install Tailscale from bash script. Instructions from website.
+curl -fsSL https://tailscale.com/install.sh | sh
+
+curl -fsSL https://pkgs.tailscale.com/stable/ubuntu/focal.gpg | sudo apt-key add -
+curl -fsSL https://pkgs.tailscale.com/stable/ubuntu/focal.list | sudo tee /etc/apt/sources.list.d/tailscale.list
+
+sudo apt-get update
+sudo apt-get install tailscale -y
+
+# Start tailscale
+sudo tailscale up
+
 # Install Pi-Hole from pi-hole.net bash script. Instructions from website.
 curl -sSL https://install.pi-hole.net | bash
 
@@ -112,18 +124,6 @@ sudo sed -i 's/#FallbackDNS=.*/FallbackDNS=1.0.0.1/' /etc/systemd/resolved.conf
 sudo sed -i -e '$aDNSStubListener=no' /etc/systemd/resolved.conf
 
 sudo ln -sf /run/systemd/resolve/resolv.conf /etc/resolv.conf
-
-# Install Tailscale from bash script. Instructions from website.
-curl -fsSL https://tailscale.com/install.sh | sh
-
-curl -fsSL https://pkgs.tailscale.com/stable/ubuntu/focal.gpg | sudo apt-key add -
-curl -fsSL https://pkgs.tailscale.com/stable/ubuntu/focal.list | sudo tee /etc/apt/sources.list.d/tailscale.list
-
-sudo apt-get update
-sudo apt-get install tailscale -y
-
-# Start tailscale
-sudo tailscale up
 
 # SearxNG Setup
 mkdir searx
