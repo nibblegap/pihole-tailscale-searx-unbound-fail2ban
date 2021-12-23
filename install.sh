@@ -1,7 +1,7 @@
 #!/usr/bin/bash
 # run which bash and replace it with /usr/bin/bash
 
-# Author: progamerrox@github
+# Author: orange-tin@github
 # Date created: December 22, 2021
 # A bash script to setup a Secure Ubuntu Server from scratch
 # Features: Pi-Hole + Unbound + Tailscale + Fail2ban + Searx 
