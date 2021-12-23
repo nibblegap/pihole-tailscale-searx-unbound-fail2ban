@@ -62,7 +62,7 @@ $ ssh username@IP
 $ cd $HOME
 $ nano install.sh                         #(Copy the instructions from the install.sh file) (CTRL+O and ENTER and CTRL+X to save and exit)
 $ chmod +x install.sh
-$ ./install_pihole.sh
+$ ./install.sh
 ```
 
 #### Additional information:
