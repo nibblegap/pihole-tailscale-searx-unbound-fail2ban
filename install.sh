@@ -36,6 +36,7 @@ sudo apt-get install tailscale -y
 sudo tailscale up
 
 # Install Pi-Hole from pi-hole.net bash script. Instructions from website.
+# Note: select tailscale0 as interface
 curl -sSL https://install.pi-hole.net | bash
 
 # change port from 80 to 85 if user wants to add Nginx later
