@@ -140,7 +140,7 @@ sudo docker run --rm \
 # Securing server
 
 # Change port from 22 to 476
-sudo sed -i 's/Port .*/Port 476/' /etc/ssh/sshd_config
+sudo sed -i 's/#Port .*/Port 476/' /etc/ssh/sshd_config
 
 sudo service sshd restart
 
