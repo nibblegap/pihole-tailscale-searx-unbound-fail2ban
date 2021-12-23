@@ -84,20 +84,6 @@ $ ./install.sh
 3. (UFW Rule prevents users from accessing SSH outside the tailscale network for security reasons) (This can be changed with ```sudo ufw allow 476/tcp```)<br/>(Port 476 was chosen at random. You may choose any port and change it to your liking in the installation script. Be sure to change all instances of "476" in the script.)
 4. Pi-Hole will, by default, only listen on the interface that you selected in the installation process. If you did not select tailscale0 as your interface, you have to: <br/>Go to your Pi-Hole's settings -> DNS -> Interface listening behavior -> Select "Listen on all interfaces, permit all origins".
 
-### IMPORTANT:
-Commands to run after reboot to start searx:
-
-```
-$ cd searx
-$ export PORT=8080
-$ sudo docker run --rm \
-             -d -p ${PORT}:8080 \
-             -v "${PWD}/searxng:/etc/searxng" \
-             -e "BASE_URL=http://localhost:$PORT/" \
-             -e "INSTANCE_NAME=Searx" \
-             searxng/searxng
-```
-
 ## Web portal locations:
 
 Pi-Hole Web portal: ```http://(tailscale_ip):85/admin/```
