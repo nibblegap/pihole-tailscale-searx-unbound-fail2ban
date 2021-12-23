@@ -1,7 +1,7 @@
 # Secure Pi-Hole + Unbound + Tailscale + Searx + Fail2Ban on an Ubuntu Server
 Installation script for a secured Pi-Hole + Unbound + Tailscale + Searx + Fail2Ban on an Ubuntu Server
 
-#### Installation instructions are in the installation_instructions.txt file.
+#### Installation instructions are in the [installation instructions file](installation_instructions.txt) file.
 #### Installation script: install.sh file.
 
 #### This script installs:
