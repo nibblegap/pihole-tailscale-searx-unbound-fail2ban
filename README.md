@@ -27,6 +27,9 @@
 8. Enables ping request dropping
 9. Sets up Fail2Ban SSH jail (maxretry=3 and bantime=604800 (1 week))
 
+#### Why Tailscale?
+While I originally built this server with OpenVPN with the help of the PiVPN project, it was too bulky and took up too much memory. Wireguard seemed like a much better option but it was a hassle to configure and setup multiple devices to connect to each other. Tailscale provides a very simple and lightweight mesh VPN that just worked. Also, with Tailscale's exit node / endpoint feature, it makes it easy to route your internet traffic through the server with no config files.
+
 # Installation Instructions:
 
 ## READ ALL THE INSTRUCTIONS TILL THE END TO NOT MISS SOMETHING CRUCIAL
