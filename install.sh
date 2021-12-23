@@ -187,5 +187,3 @@ echo "Connect your device to the Tailscale Network. Instructions at https://tail
 echo "Pi-Hole Web portal login at http://$(tailscale ip -4):85/admin"
 echo "Searx search engine at http://$(tailscale ip -4):8080"
 echo "SSH access: ssh -p 476 $(whoami)@$(tailscale ip -4)"
-echo " "
-echo "Reboot your system now with 'sudo reboot now'"
