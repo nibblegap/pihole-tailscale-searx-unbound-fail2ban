@@ -68,6 +68,7 @@ $ ./install.sh
 #### Additional information:
 1. Login to your tailscale account through the outputted link to connect your server
 2. Follow instructions on Pi-Hole setup. Select tailscale0 as your interface, and select Cloudflare (or any other provider) as your DNS and enable web portal.
+3. Setup a new password for the Pi-Hole web portal when prompted
 
 ### 4. Disable Cloudflare and Enable Unbound in Pi-Hole:
 1. Connect your device to the tailscale network. Instructions can be found at https://tailscale.com/download
