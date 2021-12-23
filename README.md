@@ -35,7 +35,7 @@ While I originally built this server with OpenVPN with the help of the PiVPN pro
 ## READ ALL THE INSTRUCTIONS TILL THE END TO NOT MISS SOMETHING CRUCIAL
 
 ## Notes: 
-1. These steps are for creating a new server from scratch. If you are using an existing server for this script, you may skip to Step 2. Read through the installation script to ensure that there are no conflicts.
+1. These steps are for creating a new server from scratch. <b>If you are using an existing server for this script, you may skip to Step 2</b>. Read through the installation script to ensure that there are no conflicts.
 2. We'll be using a VPS server for this example, but it should work fine on any server.
 3. Bash commands will have a $ before them.
 
