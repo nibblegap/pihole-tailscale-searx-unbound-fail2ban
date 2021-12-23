@@ -152,6 +152,7 @@ sudo ufw default deny incoming
 sudo ufw default allow outgoing
 sudo ufw allow in on tailscale0 comment 'Tailscale'
 sudo ufw allow 41641/udp comment 'Tailscale'
+sudo ufw allow 476/tcp comment 'SSH'
 sudo ufw enable
 
 sudo ufw status
