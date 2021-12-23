@@ -11,6 +11,8 @@
 sudo apt update -y
 sudo apt upgrade -y
 
+local_host_name = $(hostname)
+
 # Install Docker for Searx
 sudo apt install -y apt-transport-https ca-certificates curl software-properties-common
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
@@ -180,6 +182,8 @@ maxretry = 3
 bantime = 604800" | sudo tee --append /etc/fail2ban/fail2ban.local  
 
 sudo service fail2ban restart
+
+sudo hostname $local_host_name
 
 echo "	"
 echo "Connect your device to the Tailscale Network. Instructions at https://tailscale.com/download"
